@@ -49,4 +49,4 @@ The project is configured for deployment via GitHub Actions.
 2. The `.github/workflows/deploy.yml` will automatically build and deploy to GitHub Pages.
 
 ---
-Designed with ❤️ for a premium professional experience.
+Built with 💡 using Spec-Driven & Agentic AI Development.
