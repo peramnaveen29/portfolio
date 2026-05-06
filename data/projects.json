@@ -1,0 +1,309 @@
+{
+  "projects": [
+    {
+      "id": "p1",
+      "title": "Global AWS Multi-Account Landing Zone",
+      "shortDesc": "Hub-and-spoke multi-account AWS ecosystem supporting 100+ data engineers across 3 regions.",
+      "description": "Architected a decoupled, multi-account AWS ecosystem using Terraform Enterprise, providing the foundational infrastructure for a global Data Cloud Platform at First Citizens Bank. Designed Hub-and-Spoke topology via Transit Gateway with centralized IAM governance and cross-account SCPs, standardizing infrastructure across 3 AWS regions.",
+      "technologies": ["AWS", "Terraform", "Sentinel", "Transit Gateway", "IAM", "GitLab CI/CD"],
+      "category": "cloud",
+      "emoji": "🏗️",
+      "role": "Lead Infrastructure SRE and DevOps Engineer",
+      "company": "First Citizens Bank",
+      "img": "/icons/aws-res-amazon-vpc-virtual-private-cloud-vpc.svg",
+      "contributions": [
+        "Designed Hub-and-Spoke multi-account topology via Transit Gateway with centralized IAM governance",
+        "Integrated HashiCorp Sentinel in Terraform Enterprise to enforce Policy-as-Code guardrails",
+        "Managed state refactoring across 50+ workspaces during large-scale migrations with zero drift",
+        "Developed JSON/YAML-driven config framework enabling a single codebase to support 50+ AWS accounts",
+        "Engineered centralized Terraform Module Registry (VPC, EKS, RDS, S3, Lambda, KMS, DynamoDB, ECS)"
+      ],
+      "results": [
+        "Supported 100+ data engineers and scientists on mission-critical ML and data workloads",
+        "Standardized infrastructure across 3 AWS regions globally",
+        "Zero infrastructure drift maintained across 50+ workspaces",
+        "Reduced blast radius through modular state decomposition"
+      ],
+      "featured": true,
+      "repository": "https://github.com/peramnaveen29"
+    },
+    {
+      "id": "p2",
+      "title": "GenAI Developer Portal & RAG Platform",
+      "shortDesc": "Internal PaaS using Amazon Bedrock enabling self-service SageMaker and Snowflake provisioning via LLM workflows.",
+      "description": "Designed an internal PaaS using Amazon Bedrock and AWS Service Catalog, enabling self-service provisioning of SageMaker environments and Snowflake sandboxes via LLM-driven workflows. Built GenAI infrastructure on Amazon Bedrock (Claude, Titan) for RAG-based internal knowledge assistants with embedding pipelines and OpenSearch vector stores.",
+      "technologies": ["Amazon Bedrock", "LangChain", "OpenSearch", "SageMaker", "AWS Service Catalog", "Python"],
+      "category": "genai",
+      "emoji": "🤖",
+      "role": "Lead Infrastructure SRE and DevOps Engineer",
+      "company": "First Citizens Bank",
+      "img": "/icons/aws-amazon-bedrock.svg",
+      "contributions": [
+        "Designed internal PaaS using Amazon Bedrock (Claude, Titan) for LLM-driven self-service provisioning",
+        "Built RAG-based internal knowledge assistants with embedding pipelines and OpenSearch vector stores",
+        "Engineered LangChain orchestration deployed across 3 business units",
+        "Integrated Amazon Q Developer for AI-assisted infrastructure operations"
+      ],
+      "results": [
+        "Eliminated 30+ manual SRE requests per month through self-service automation",
+        "RAG platform deployed across 3 business units",
+        "Enabled developer self-service for 100+ engineers"
+      ],
+      "featured": true,
+      "repository": "https://github.com/peramnaveen29"
+    },
+    {
+      "id": "p3",
+      "title": "AWS CDK Migration & Infrastructure Modernization",
+      "shortDesc": "Migrated legacy CloudFormation to AWS CDK TypeScript L3 constructs, cutting provisioning time by 40%.",
+      "description": "Transitioned legacy CloudFormation stacks to AWS CDK (TypeScript) L3 constructs and Service Catalog products. Constructed secure, reusable infrastructure modules enabling full developer self-service. Reduced cloud infrastructure provisioning time by 40% and enabled 100+ engineers to provision compliant infrastructure independently.",
+      "technologies": ["AWS CDK", "TypeScript", "CloudFormation", "AWS Service Catalog", "IAM"],
+      "category": "cloud",
+      "emoji": "⚡",
+      "role": "Lead Infrastructure SRE and DevOps Engineer",
+      "company": "First Citizens Bank",
+      "img": "/icons/aws-aws-cloudformation.svg",
+      "contributions": [
+        "Migrated legacy CloudFormation stacks to AWS CDK TypeScript L3 constructs",
+        "Built Service Catalog products for developer self-service infrastructure provisioning",
+        "Constructed secure, reusable infrastructure modules enforcing enterprise security standards",
+        "Implemented programmatic infrastructure patterns replacing manual CloudFormation authoring"
+      ],
+      "results": [
+        "Reduced cloud infrastructure provisioning time by 40%",
+        "Enabled full developer self-service for 100+ engineers",
+        "Eliminated manual CloudFormation authoring across the platform"
+      ],
+      "featured": true,
+      "repository": "https://github.com/peramnaveen29"
+    },
+    {
+      "id": "p4",
+      "title": "Event-Driven ETL & FinOps Architecture",
+      "shortDesc": "Ephemeral PySpark compute with S3 event triggers cutting idle compute costs by 35%.",
+      "description": "Engineered an ephemeral, self-terminating compute architecture for PySpark pipelines at First Citizens Bank. Utilized S3 event notifications to trigger AWS Lambda for dynamic EC2 provisioning and pre-checks. Implemented AWS Instance Scheduler for EC2/RDS lifecycle automation delivering significant FinOps savings.",
+      "technologies": ["AWS Lambda", "S3", "EC2", "PySpark", "Step Functions", "EventBridge", "Python"],
+      "category": "devops",
+      "emoji": "💰",
+      "role": "Lead Infrastructure SRE and DevOps Engineer",
+      "company": "First Citizens Bank",
+      "img": "/icons/aws-aws-lambda.svg",
+      "contributions": [
+        "Engineered ephemeral self-terminating PySpark compute using S3 Events → Lambda → dynamic EC2",
+        "Implemented automated pre/post-processing for ETL pipeline lifecycle management",
+        "Deployed AWS Instance Scheduler for EC2/RDS lifecycle automation across non-production environments",
+        "Built self-healing workflows for cross-account data replication and S3 object restoration"
+      ],
+      "results": [
+        "Cut idle compute costs by ~35% versus always-on clusters",
+        "Delivered 30%+ reduction in non-production cloud spend",
+        "Estimated $200K+ annual savings from FinOps optimizations"
+      ],
+      "featured": true,
+      "repository": "https://github.com/peramnaveen29"
+    },
+    {
+      "id": "p5",
+      "title": "DataOps CI/CD — Snowflake & Qlik Automation",
+      "shortDesc": "Multi-repo CI/CD pipelines compressing Snowflake and Qlik release cycles from days to under 2 hours.",
+      "description": "Built multi-repo CI/CD pipelines using Azure DevOps and GitLab to automate Snowflake RBAC, Qlik deployments, and IICS mapping releases. Developed custom automation layer for Qlik Sense using REST APIs and NodeJS to programmatically promote dashboards across Dev, Test, and Production streams.",
+      "technologies": ["Azure DevOps", "GitLab CI/CD", "Snowflake", "Terraform", "NodeJS", "IICS"],
+      "category": "devops",
+      "emoji": "🔄",
+      "role": "Lead Infrastructure SRE and DevOps Engineer",
+      "company": "First Citizens Bank",
+      "img": "/icons/snowflake.svg",
+      "contributions": [
+        "Engineered CI/CD framework automating Snowflake database, warehouse, schema, and RBAC lifecycle",
+        "Developed NodeJS automation layer for Qlik Sense REST API-driven dashboard promotion",
+        "Built unified CI/CD pipelines for IICS bridging on-premises data sources with cloud-native data lakes",
+        "Automated EDW workloads via Ansible Tower including SAP BODS ETL and Redwood scheduling"
+      ],
+      "results": [
+        "Compressed release cycles from multi-day manual processes to under 2 hours",
+        "Eliminated manual Snowflake RBAC management across all environments",
+        "Unified deployment automation across Qlik, Snowflake, and IICS platforms"
+      ],
+      "featured": true,
+      "repository": "https://github.com/peramnaveen29"
+    },
+    {
+      "id": "p7",
+      "title": "Cross-Region Disaster Recovery Platform",
+      "shortDesc": "Automated cross-region DR achieving <15-minute RTO for mission-critical data workloads.",
+      "description": "Architected and validated Cross-Region Disaster Recovery strategies at First Citizens Bank, automating the failover of mission-critical data workloads and Terraform Enterprise state to secondary AWS regions. Implemented self-healing workflows and automated recovery procedures.",
+      "technologies": ["AWS", "Route53", "RDS", "Terraform", "Python", "Step Functions", "S3"],
+      "category": "sre",
+      "emoji": "🛡️",
+      "role": "Lead Infrastructure SRE and DevOps Engineer",
+      "company": "First Citizens Bank",
+      "img": "/icons/aws-aurora.svg",
+      "contributions": [
+        "Architected cross-region DR strategies automating failover of mission-critical data workloads",
+        "Automated TFE state replication to secondary AWS regions",
+        "Developed self-healing workflows for cross-account data replication and S3 object restoration",
+        "Implemented automated Golden AMI pipeline using Step Functions and EC2 Image Builder"
+      ],
+      "results": [
+        "Achieved <15-minute RTO for core platform services",
+        "Zero-downtime DR validation across multiple test scenarios",
+        "Automated recovery eliminating manual intervention for common failure modes"
+      ],
+      "featured": false,
+      "repository": "https://github.com/peramnaveen29"
+    },
+    {
+      "id": "p8",
+      "title": "Enterprise Security & WAF Governance",
+      "shortDesc": "Enterprise-wide edge security with AWS WAF, Prisma Cloud CSPM, and SFTP PGP encryption gateway.",
+      "description": "Engineered enterprise-wide edge security posture at First Citizens Bank by deploying AWS WAF with custom automated rulesets. Implemented Prisma Cloud for CSPM drift detection. Architected SFTP ingestion gateways using AWS Transfer Family with PGP encryption and Lambda@Edge for secure financial data pipelines.",
+      "technologies": ["AWS WAF", "Prisma Cloud", "AWS Transfer Family", "Lambda", "KMS", "CyberArk", "IAM"],
+      "category": "sre",
+      "emoji": "🔐",
+      "role": "Lead Infrastructure SRE and DevOps Engineer",
+      "company": "First Citizens Bank",
+      "img": "/icons/aws-waf.svg",
+      "contributions": [
+        "Deployed AWS WAF with custom rulesets for rate-limiting, bot mitigation, and OWASP Top 10 protection",
+        "Implemented Prisma Cloud CSPM for continuous infrastructure drift detection and remediation",
+        "Architected SFTP ingestion gateway with PGP encryption/decryption for sensitive PII data",
+        "Integrated Lambda@Edge for secure S3 presigned URL generation across financial data pipelines",
+        "Implemented IaC Sentinel policies enforcing mandatory S3 encryption and RDS public-access blocking"
+      ],
+      "results": [
+        "Enterprise-wide OWASP Top 10 protection across all public-facing ALBs and API Gateways",
+        "Continuous compliance monitoring with automated drift remediation",
+        "Secure PII data handling across enterprise financial data pipelines"
+      ],
+      "featured": false,
+      "repository": "https://github.com/peramnaveen29"
+    },
+    {
+      "id": "p6",
+      "title": "Data Lake Platform & ML Ingestion (Spot Award Recipient)",
+      "shortDesc": "Pioneered the enterprise AWS Data Lake from scratch at Silicon Valley Bank, earning a Spot Award for innovative production delivery.",
+      "description": "Recognized as a Technical Pioneer at Silicon Valley Bank for architecting and productionizing the enterprise AWS Data Lake from the ground up. Engineered a multi-modal ingestion pipeline using SQS triggers, AWS Lambda, and AWS Glue. Orchestrated complex data workflows via AWS Step Functions and ensured robust governance with Lake Formation.",
+      "technologies": ["AWS Lambda", "SQS", "AWS Glue", "SageMaker", "Step Functions", "Lake Formation", "Snowflake"],
+      "category": "cloud",
+      "emoji": "🧠",
+      "role": "Senior Software Engineer – DevOps",
+      "company": "Silicon Valley Bank",
+      "img": "/icons/aws-aws-glue.svg",
+      "contributions": [
+        "Architected multi-modal ingestion pipeline: SQS → Lambda → Glue → SageMaker",
+        "Configured S3 Event Notifications for real-time file validation and metadata extraction",
+        "Utilized Step Functions to orchestrate Saga patterns ensuring transactional integrity",
+        "Implemented Lake Formation for fine-grained data lake governance and access control",
+        "Engineered centralized Jenkins shared library (Groovy) standardizing deployments across AWS and OpenShift"
+      ],
+      "results": [
+        "Enabled automated dataset routing to ML inference workflows",
+        "Reduced deployment errors by ~60% through pipeline standardization",
+        "Scaled DevOps team from 1 to 10 engineers"
+      ],
+      "featured": true,
+      "repository": "https://github.com/peramnaveen29"
+    },
+    {
+      "id": "p11",
+      "title": "DevOps Function Leadership & Scaling",
+      "shortDesc": "Founded and scaled the DevOps practice from 1 to 10 engineers, standardizing CI/CD across hybrid cloud environments.",
+      "description": "Established the core DevOps practice from scratch at Silicon Valley Bank, scaling and leading a high-performing team of 10 engineers. Ramped up team capabilities through hands-on mentorship and technical roadmap strategy. Engineered a centralized Jenkins shared library using Groovy to standardize deployments across AWS, OpenShift, and On-Premises.",
+      "technologies": ["Leadership", "Mentorship", "Jenkins", "Groovy", "Bitbucket", "OpenShift", "AWS"],
+      "category": "devops",
+      "emoji": "🛠️",
+      "role": "Senior Software Engineer – DevOps",
+      "company": "Silicon Valley Bank",
+      "img": "/icons/jenkins.svg",
+      "contributions": [
+        "Founded and scaled the DevOps function from 1 to 10 engineers supporting rapid organizational growth",
+        "Developed a centralized Jenkins shared library (Groovy) standardizing cross-environment deployments",
+        "Utilized Bitbucket as version control system enforcing branch protection and peer review standards",
+        "Integrated security gates into CI/CD pipelines to block non-compliant infrastructure"
+      ],
+      "results": [
+        "Reduced deployment errors by ~60%",
+        "Eliminated cross-environment toolchain fragmentation",
+        "Scaled the DevOps team 10x to support the Data Engineering organization"
+      ],
+      "featured": true,
+      "repository": "https://github.com/peramnaveen29"
+    },
+    {
+      "id": "p12",
+      "title": "On-Prem to AWS Migration & Security Automation",
+      "shortDesc": "Lift-and-shift of legacy workloads to AWS with zero-downtime and automated IAM least-privilege.",
+      "description": "Led lift-and-shift and re-platform migrations of legacy on-prem workloads to AWS (EC2, RDS, S3) at Silicon Valley Bank. Standardized networking via VPC design, security groups, and NACLs. Implemented automated IAM least-privilege enforcement and rolled out AppDynamics APM and Splunk forwarder instrumentation across containerized microservices.",
+      "technologies": ["AWS", "EC2", "RDS", "IAM", "AppDynamics", "Splunk", "Python"],
+      "category": "cloud",
+      "emoji": "☁️",
+      "role": "Senior Software Engineer – DevOps",
+      "company": "Silicon Valley Bank",
+      "img": "/icons/aws-amazon-ec2.svg",
+      "contributions": [
+        "Led lift-and-shift and re-platform migrations of legacy on-prem workloads to AWS (EC2, RDS, S3)",
+        "Standardized networking via VPC design, security groups, and NACLs for banking-critical services",
+        "Implemented automated IAM least-privilege enforcement and compliance scanning across all AWS accounts",
+        "Rolled out AppDynamics APM and Splunk forwarder instrumentation across containerized OpenShift microservices"
+      ],
+      "results": [
+        "Maintained zero-downtime cutover for banking-critical services during migration",
+        "Reduced mean time to detect (MTTD) incidents by ~50% through full-stack observability",
+        "Achieved automated compliance blocking across the AWS estate"
+      ],
+      "featured": true,
+      "repository": "https://github.com/peramnaveen29"
+    },
+    {
+      "id": "p9",
+      "title": "Cloud Foundation & Automation Portal",
+      "shortDesc": "AWS Landing Zone baselining and private cloud automation portal reducing provisioning SLAs by 50%.",
+      "description": "Executed AWS Landing Zone baselining for enterprise clients and built a private cloud self-service portal using Python, Django, and Terraform. Implemented production Docker, Kubernetes, and OpenShift workloads for multiple enterprise clients. Developed Python and Ansible playbooks to automate server provisioning and configuration management.",
+      "technologies": ["Python", "Django", "Terraform", "Docker", "Kubernetes", "OpenShift", "Ansible", "AWS"],
+      "category": "cloud",
+      "emoji": "☁️",
+      "role": "Associate Cloud Architect",
+      "company": "Microland Ltd",
+      "img": "/icons/aws.svg",
+      "contributions": [
+        "Executed AWS Landing Zone baselining for enterprise clients",
+        "Built a private cloud self-service portal using Python, Django, and Terraform",
+        "Implemented and operationalized production Docker, Kubernetes, and OpenShift workloads",
+        "Developed Python and Ansible playbooks to automate server provisioning and patching",
+        "Designed VPC architectures with public/private subnet segmentation and Transit Gateway peering"
+      ],
+      "results": [
+        "Reduced manual cloud infrastructure provisioning SLAs by 50%",
+        "Eliminated repetitive manual ops tasks for a team of 15+ engineers",
+        "Successfully migrated enterprise clients from on-prem data centers to AWS"
+      ],
+      "featured": true,
+      "repository": "https://github.com/peramnaveen29"
+    },
+    {
+      "id": "p10",
+      "title": "SiteScope Product Engineering & SRE",
+      "shortDesc": "Engineered product enhancements and automated incident troubleshooting for SiteScope monitoring product.",
+      "description": "Engineered product enhancements for SiteScope monitoring product across 3 major releases using Java, AngularJS, and HTML. Profiled and resolved memory leak and thread contention issues in the Java backend. Triaged high-severity production incidents and built Python automation scripts for recurring troubleshooting workflows.",
+      "technologies": ["Java", "AngularJS", "HTML", "Python"],
+      "category": "devops",
+      "emoji": "📈",
+      "role": "System Software Engineer II",
+      "company": "Hewlett Packard Enterprise",
+      "img": "/icons/java.svg",
+      "contributions": [
+        "Delivered SiteScope monitoring product enhancements across 3 major releases",
+        "Profiled and resolved memory leak and thread contention issues in the Java backend",
+        "Triaged high-severity production incidents for enterprise monitoring customers",
+        "Built Python automation scripts for recurring troubleshooting workflows"
+      ],
+      "results": [
+        "Shipped 3 major releases on schedule with full unit test coverage",
+        "Reduced MTTR by ~40% through incident troubleshooting automation",
+        "Improved product stability and reduced customer-reported crash rates"
+      ],
+      "featured": false,
+      "repository": "https://github.com/peramnaveen29"
+    }
+  ]
+}

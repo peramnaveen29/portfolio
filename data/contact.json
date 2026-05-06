@@ -1,0 +1,24 @@
+{
+  "name": "Naveen Peram",
+  "title": "Lead Infrastructure SRE and DevOps Engineer",
+  "tagline": "Cloud Architect | Platform Engineer | SRE | GenAI Enthusiast",
+  "location": "Dallas, TX",
+  "email": "peramnaveen29@gmail.com",
+  "social": {
+    "github": "https://github.com/peramnaveen29",
+    "linkedin": "https://linkedin.com/in/naveen-peram"
+  },
+  "summary": "Principal Platform Engineer with 11+ years bridging Software Engineering, SRE, and Cloud/Data Infrastructure. Specializes in architecting global-scale AWS Landing Zones, GenAI-enabled developer platforms, and event-driven data ecosystems that empower 100+ engineers to ship at velocity. Expert in eliminating operational toil through IaC, Policy-as-Code, and self-healing architectures across Kubernetes and event-driven systems.",
+  "education": {
+    "degree": "Bachelor of Technology (B.Tech)",
+    "institution": "National Institute of Technology (NIT), Warangal, India",
+    "gpa": "8.25/10"
+  },
+  "certifications": [
+    "AWS Certified DevOps Engineer – Professional",
+    "AWS Certified Solutions Architect – Associate",
+    "AWS Certified SysOps Administrator – Associate",
+    "Certified Jenkins Engineer (CJE)",
+    "CyberArk Certified Trustee"
+  ]
+}
