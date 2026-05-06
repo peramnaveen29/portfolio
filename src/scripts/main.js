@@ -155,7 +155,7 @@ function renderSkills(skills) {
         ${cat.items.map(item => `
           <div class="skill-item">
             ${item.img 
-              ? `<img src="${item.img}" alt="${item.name}" class="skill-img-icon" aria-hidden="true" onerror="this.src='https://api.iconify.design/vscode-icons:default-custom.svg'">`
+              ? `<img src="/portfolio/${item.img}" alt="${item.name}" class="skill-img-icon" aria-hidden="true" onerror="this.src='https://api.iconify.design/vscode-icons:default-custom.svg'">`
               : (item.devicon 
                 ? `<i class="${item.devicon}" aria-hidden="true"></i>` 
                 : `<span>${item.icon || '📌'}</span>`)
