@@ -1,53 +1,34 @@
-# Engineering the Professional Portfolio: A Case Study in SRE-Driven Web Architecture
+# Naveen Peram - Professional Technical Portfolio
 
 ### **Live Site**: [peramnaveen29.github.io/portfolio/](https://peramnaveen29.github.io/portfolio/)
 
-This repository is not just a personal website; it is a demonstration of **modern platform engineering**, **automated CI/CD**, and **data-driven design** applied to a high-performance web asset.
+This repository is a redefined, visually-driven evolution of my professional resume. It is designed to showcase my experience in **Platform Engineering**, **SRE**, and **Cloud Infrastructure** through a high-fidelity interactive experience.
 
 ---
 
-## 🏛️ Architectural Rationale
+## 🏛️ Project Rationale
 
-As a **Lead Infrastructure SRE**, I believe that personal projects should reflect the same engineering standards as enterprise systems. This portfolio was built with a "Privacy-First, Performance-Always" mindset.
+The goal of this project was to move beyond the traditional static resume and build a modular, data-driven portfolio that reflects a modern engineering mindset.
 
-### **1. Data-Driven & Decoupled Content**
-Instead of hardcoding content into HTML, the entire site is driven by a **JSON-based content engine**. This separation of concerns allows for:
-*   **Rapid Updates**: Modifying professional experience or technical skills without touching the UI logic.
-*   **Scalability**: The system is designed to support multiple "views" or versions by simply swapping data sources.
+### **Key Features**
+*   **Data-Driven Content**: Decoupled UI and content using a JSON-based engine for easy maintenance and scalability.
+*   **Automated CI/CD**: Integrated GitHub Actions pipeline for seamless building and deployment to GitHub Pages.
+*   **Security Governance**: Protected using GitHub Repository Rulesets to ensure branch integrity and history preservation.
 
-### **2. Automated CI/CD & Deployment Pipeline**
-The site utilizes a robust **GitHub Actions** workflow (`deploy.yml`) to ensure:
-*   **Zero-Downtime Updates**: Automated build and deployment to GitHub Pages on every push to the main branch.
-*   **Build Optimization**: Leveraging Vite for asset bundling, tree-shaking, and minification to achieve high Lighthouse scores.
-
-### **3. Enterprise Security & Governance**
-To secure this public technical showcase, I have implemented:
-*   **GitHub Repository Rulesets**: Enforcing strict branch protection, blocking force-pushes, and restricting deletions.
-*   **Admin-Only Governance**: A tailored bypass list ensuring that while the site is public, control remains centralized and secure.
-
-### **4. Modern UI Engineering**
-*   **Performance**: Localized SVG hosting and optimized asset pathing for subpath deployment compatibility.
-*   **Responsive Experience**: A custom CSS design system using glassmorphism and CSS variables for a premium, mobile-first experience.
-*   **Accessibility**: Full ARIA-compliant navigation and semantic HTML structure.
-
----
-
-## 🛠️ Tech Stack & Tooling
-
-*   **Runtime/Build**: Node.js, Vite
-*   **Styling**: Modern CSS3 (Variables, Grid, Flexbox)
-*   **Logic**: Vanilla JavaScript (ES6+)
-*   **Infrastructure**: GitHub Actions, GitHub Pages, Branch Rulesets
-*   **Branding**: Professional SVG assets hosted locally for reliability.
+### **Future Roadmap**
+This is a living project. Future iterations will include:
+*   **Architectural Deep-Dives**: Interactive system diagrams for featured projects.
+*   **Technical Blog**: A space to share insights on GenAI, SRE practices, and Cloud Governance.
+*   **Extended Case Studies**: Granular breakdowns of complex infrastructure transformations.
 
 ---
 
 ## 💡 Developed with Agentic AI Collaboration
-This project is a masterclass in **"Vibe Coding"** and high-velocity engineering. 
 
-*   **Process**: Developed through high-level conceptual "vibe" collaboration, where a technical specification was refined through multiple iterative feedback loops for maximum robustness.
-*   **Execution**: The final spec was orchestrated through a multi-agent system to eliminate hallucinations and ensure production-grade code quality.
-*   **Velocity**: The entire platform—from concept to global deployment and security hardening—was completed and taken **Live in under 24 hours**.
+This project was built using a high-velocity **"Vibe Coding"** workflow:
+*   **Iterative Refinement**: Developed through high-level conceptual collaboration and robust iterative feedback loops.
+*   **Agentic Orchestration**: The technical specifications were executed through multi-agent systems to ensure quality and speed.
+*   **Efficiency**: The transition from conceptual spec to a live, production-hardened site was completed in **under 24 hours**.
 
 ---
 *For internal setup and development instructions, see [DEVELOPMENT.md](./DEVELOPMENT.md).*
