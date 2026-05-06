@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Resume parser output
+resume-parser/output/
+
+# Environment files
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Hidden folders
+.resumes/
+.05/
+.kiro/
+
+# IDE
+.idea/
+.vscode/
+.gemini/

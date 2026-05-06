@@ -1,0 +1,27 @@
+:root {
+  --bg: #09090b;
+  --bg-2: #18181b;
+  --bg-3: #27272a;
+  --accent: #3b82f6;
+  --accent-2: #8b5cf6;
+  --accent-glow: rgba(59, 130, 246, 0.15);
+  --accent-gradient: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  --green: #10b981;
+  --text-1: #fafafa;
+  --text-2: #d4d4d8;
+  --text-3: #a1a1aa;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-2: rgba(255, 255, 255, 0.04);
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  --shadow-accent: 0 0 40px rgba(59, 130, 246, 0.2);
+  --glass-bg: rgba(24, 24, 27, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'Fira Code', monospace;
+}

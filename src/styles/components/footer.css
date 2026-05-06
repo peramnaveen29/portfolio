@@ -1,0 +1,43 @@
+/* ===== FOOTER ===== */
+.footer {
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  padding: 2.5rem 0;
+}
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer-copy { font-size: 0.875rem; color: var(--text-3); }
+.footer-links { display: flex; gap: 2rem; }
+.footer-links a { font-size: 0.875rem; color: var(--text-3); transition: color var(--transition); }
+.footer-links a:hover { color: var(--accent); }
+
+/* Scroll to top */
+.scroll-top {
+  position: fixed;
+  bottom: 2rem; right: 2rem;
+  width: 44px; height: 44px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all var(--transition);
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(88,166,255,0.4);
+}
+.scroll-top:hover { background: var(--accent-2); color: #fff; transform: translateY(-2px); }
+.scroll-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+
+@media (max-width: 767px) {
+  .footer .container { flex-direction: column; text-align: center; }
+  .footer-links { justify-content: center; flex-wrap: wrap; gap: 1.25rem; }
+}

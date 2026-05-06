@@ -1,0 +1,81 @@
+/* ===== MODAL ===== */
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.modal[aria-hidden="false"] { display: flex; }
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+}
+.modal-content {
+  position: relative;
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  max-width: 680px;
+  width: 100%;
+  max-height: 88vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+  animation: modalIn 0.3s ease;
+}
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(30px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.close-btn {
+  position: absolute;
+  top: 1.25rem; right: 1.25rem;
+  width: 36px; height: 36px;
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition);
+  z-index: 10;
+}
+.close-btn:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+.modal-body { padding: 2.5rem; }
+.modal-body h2 { font-size: 1.75rem; font-weight: 800; color: var(--text-1); margin-bottom: 0.75rem; }
+.modal-tech-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; }
+.modal-tech-tag {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--accent);
+  background: var(--accent-glow);
+  border: 1px solid rgba(88,166,255,0.2);
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+}
+.modal-section { margin-bottom: 1.75rem; }
+.modal-section h3 { font-size: 0.85rem; font-weight: 600; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem; }
+.modal-section p { color: var(--text-2); line-height: 1.8; }
+.modal-section ul { padding-left: 1.25rem; }
+.modal-section ul li { color: var(--text-2); line-height: 1.8; margin-bottom: 0.4rem; list-style: disc; }
+.modal-links { display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; }
+.modal-links .btn { flex: 1; justify-content: center; min-width: 140px; }
+
+@media (max-width: 767px) {
+  .modal-body { padding: 1.75rem; }
+  .modal-body h2 { font-size: 1.4rem; }
+}
+
+/* Modal company/role line */
+.modal-company {
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  margin-bottom: 1rem;
+}
