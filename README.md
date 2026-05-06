@@ -30,14 +30,14 @@ Principal Platform Engineer with 11+ years of experience in Software Engineering
 
 ## 📁 Project Structure
 
-- `src/data/`: JSON files containing resume content, skills, and projects.
+- `public/data/`: JSON files containing resume content, skills, and projects.
 - `src/styles/`: Modular CSS components.
 - `src/scripts/`: Dynamic rendering logic and UI interactions.
 - `public/icons/`: Locally hosted SVG assets for performance and reliability.
 
 ## 📄 Updating Content
 
-To update the portfolio content, modify the JSON files in `src/data/`:
+To update the portfolio content, modify the JSON files in `public/data/`:
 - `skills.json`: Add or update technical skills and icons.
 - `projects.json`: Add new featured projects and contributions.
 - `contact.json`: Update social links and contact info.

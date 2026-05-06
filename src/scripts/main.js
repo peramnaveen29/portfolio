@@ -135,7 +135,7 @@ function initReveal() {
 // ===== SKILLS =====
 async function loadSkills() {
   try {
-    const res = await fetch('src/data/skills.json');
+    const res = await fetch('data/skills.json');
     if (!res.ok) throw new Error('Failed to load skills');
     const data = await res.json();
     renderSkills(data.skills);
@@ -175,7 +175,7 @@ let allProjects = [];
 
 async function loadProjects() {
   try {
-    const res = await fetch('src/data/projects.json');
+    const res = await fetch('data/projects.json');
     if (!res.ok) throw new Error('Failed to load');
     const data = await res.json();
     allProjects = data.projects;
