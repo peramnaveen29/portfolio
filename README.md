@@ -11,6 +11,7 @@ This repository is a redefined, visually-driven evolution of my professional res
 The goal of this project was to move beyond the traditional static resume and build a modular, data-driven portfolio that reflects a modern engineering mindset.
 
 ### **Key Features**
+*   **Visual Portfolio Redefinition**: A high-fidelity, **mobile-friendly** experience designed to replace the traditional static resume.
 *   **Data-Driven Content**: Decoupled UI and content using a JSON-based engine for easy maintenance and scalability.
 *   **Automated CI/CD**: Integrated GitHub Actions pipeline for seamless building and deployment to GitHub Pages.
 *   **Security Governance**: Protected using GitHub Repository Rulesets to ensure branch integrity and history preservation.
