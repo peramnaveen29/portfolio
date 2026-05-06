@@ -14,7 +14,7 @@
     <article class="project-card reveal" tabindex="0" role="button"
       aria-label="View details for ${e.title}" data-id="${e.id}">
       <div class="project-thumb">
-        ${e.img?`<img src="${e.img}" alt="${e.title}" class="project-thumb-img" aria-hidden="true">`:`<div class="project-thumb-placeholder" aria-hidden="true">${e.emoji}</div>`}
+        ${e.img?`<img src="/portfolio/${e.img}" alt="${e.title}" class="project-thumb-img" aria-hidden="true">`:`<div class="project-thumb-placeholder" aria-hidden="true">${e.emoji}</div>`}
         <div class="project-overlay">
           <div class="project-overlay-title">${e.title}</div>
           <div class="project-overlay-tech">${e.technologies.slice(0,3).join(` · `)}</div>
