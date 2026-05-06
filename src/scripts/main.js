@@ -324,6 +324,7 @@ function initModal() {
 // ===== FOOTER =====
 function initFooter() {
   // Update copyright year dynamically
+  // Ruleset verification push
   const el = document.getElementById('year');
   if (el) el.textContent = new Date().getFullYear();
 }
