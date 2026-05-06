@@ -1,16 +1,22 @@
 {
   "skills": [
     {
-      "category": "AWS: Compute & Containers",
+      "category": "AWS: Compute",
       "items": [
-        { "name": "Amazon EKS", "img": "icons/aws-amazon-elastic-kubernetes-service.svg" },
-        { "name": "Amazon ECS", "img": "icons/aws-amazon-elastic-container-service.svg" },
-        { "name": "AWS Lambda", "img": "icons/aws-aws-lambda.svg" },
-        { "name": "AWS Fargate", "img": "icons/aws-amazon-elastic-container-service.svg" },
         { "name": "Amazon EC2", "img": "icons/aws-amazon-ec2.svg" },
         { "name": "Auto Scaling", "img": "icons/aws-amazon-ec2-auto-scaling.svg" },
+        { "name": "AWS Lambda", "img": "icons/aws-aws-lambda.svg" }
+      ]
+    },
+    {
+      "category": "Containerization & Orchestration",
+      "items": [
+        { "name": "Kubernetes", "devicon": "devicon-kubernetes-plain colored" },
+        { "name": "Docker", "devicon": "devicon-docker-plain colored" },
         { "name": "OpenShift", "devicon": "devicon-redhat-plain colored" },
-        { "name": "Docker", "devicon": "devicon-docker-plain colored" }
+        { "name": "Amazon EKS", "img": "icons/aws-amazon-elastic-kubernetes-service.svg" },
+        { "name": "Amazon ECS", "img": "icons/aws-amazon-elastic-container-service.svg" },
+        { "name": "AWS Fargate", "img": "icons/aws-amazon-elastic-container-service.svg" }
       ]
     },
     {
@@ -65,7 +71,7 @@
       "items": [
         { "name": "Terraform", "devicon": "devicon-terraform-plain colored" },
         { "name": "AWS CDK", "img": "icons/aws.svg" },
-        { "name": "Jenkins", "devicon": "devicon-jenkins-plain colored" },
+        { "name": "Jenkins", "img": "icons/jenkins-official.svg" },
         { "name": "GitLab CI", "devicon": "devicon-gitlab-plain colored" },
         { "name": "GitHub Actions", "devicon": "devicon-githubactions-plain colored" },
         { "name": "Azure DevOps", "img": "icons/azure-azure-devops.svg" },
