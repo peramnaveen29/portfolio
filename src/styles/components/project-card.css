@@ -107,7 +107,11 @@
 
 @media (max-width: 767px) {
   .projects { padding: 5rem 0; }
-  .project-grid { grid-template-columns: 1fr; }
+  .project-filters { gap: 0.5rem; }
+  .filter-btn { padding: 0.4rem 0.8rem; font-size: 0.8rem; }
+  .project-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+  .project-info { padding: 1.25rem; }
+  .project-thumb-img { padding: 2.5rem; }
 }
 
 /* Project meta (company + category) */

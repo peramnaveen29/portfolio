@@ -63,5 +63,7 @@
 
 @media (max-width: 767px) {
   .expertise { padding: 5rem 0; }
-  .expertise-grid { grid-template-columns: 1fr; }
+  .expertise-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .expertise-card { padding: 1.5rem; text-align: center; }
+  .expertise-icon { margin: 0 auto 1.25rem; }
 }

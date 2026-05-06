@@ -244,9 +244,31 @@
 
 /* Responsive */
 @media (max-width: 900px) {
-  .hero .container { grid-template-columns: 1fr; text-align: center; }
-  .hero-visual { display: none; }
-  .hero-cta { justify-content: center; }
+  .hero { padding: 6rem 0 3rem; min-height: auto; }
+  .hero .container { 
+    grid-template-columns: 1fr; 
+    text-align: center; 
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-visual { 
+    order: -1; 
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  .hero-avatar { width: 240px; height: 240px; }
+  .avatar-img, .avatar-initials { width: 200px; height: 200px; font-size: 4rem; }
+  .floating-badge { display: none; }
+  .hero-name { font-size: 2.5rem; }
+  .hero-roles { justify-content: center; font-size: 1.1rem; }
+  .hero-cta { justify-content: center; flex-direction: column; width: 100%; }
+  .hero-cta .btn { width: 100%; justify-content: center; }
   .hero-socials { justify-content: center; }
-  .hero-roles { justify-content: center; }
+}
+
+@media (max-width: 480px) {
+  .hero-name { font-size: 2rem; }
+  .hero-avatar { width: 200px; height: 200px; }
+  .avatar-img, .avatar-initials { width: 160px; height: 160px; }
 }
