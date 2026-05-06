@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Naveen Peram</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: var(--bg-1);
+            color: var(--text-1);
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+        }
+        .error-container {
+            padding: 2rem;
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 8rem;
+            margin: 0;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 900;
+            line-height: 1;
+        }
+        p {
+            font-size: 1.5rem;
+            color: var(--text-2);
+            margin-bottom: 2rem;
+        }
+        .home-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            transition: all var(--transition);
+        }
+        .home-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-accent);
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1>404</h1>
+        <p>Oops! The page you're looking for has drifted into deep space.</p>
+        <a href="/" class="home-btn">Return to Mission Control</a>
+    </div>
+</body>
+</html>
