@@ -206,7 +206,7 @@ function renderProjects(filter) {
       aria-label="View details for ${p.title}" data-id="${p.id}">
       <div class="project-thumb">
         ${p.img 
-          ? `<img src="${p.img}" alt="${p.title}" class="project-thumb-img" aria-hidden="true">`
+          ? `<img src="/portfolio/${p.img}" alt="${p.title}" class="project-thumb-img" aria-hidden="true">`
           : `<div class="project-thumb-placeholder" aria-hidden="true">${p.emoji}</div>`
         }
         <div class="project-overlay">
