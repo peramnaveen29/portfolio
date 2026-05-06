@@ -32,4 +32,5 @@ This project was built using a high-velocity **"Vibe Coding"** workflow:
 *   **Efficiency**: The transition from conceptual spec to a live, production-hardened site was completed in **under 24 hours**.
 
 ---
+*For a deep dive into the engineering behind this site, see [ARCHITECTURE.md](./ARCHITECTURE.md).*
 *For internal setup and development instructions, see [DEVELOPMENT.md](./DEVELOPMENT.md).*
