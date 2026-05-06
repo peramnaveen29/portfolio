@@ -4,7 +4,7 @@
       <div class="skill-icons">
         ${e.items.map(e=>`
           <div class="skill-item">
-            ${e.img?`<img src="${e.img}" alt="${e.name}" class="skill-img-icon" aria-hidden="true" onerror="this.src='https://api.iconify.design/vscode-icons:default-custom.svg'">`:e.devicon?`<i class="${e.devicon}" aria-hidden="true"></i>`:`<span>${e.icon||`📌`}</span>`}
+            ${e.img?`<img src="/portfolio/${e.img}" alt="${e.name}" class="skill-img-icon" aria-hidden="true" onerror="this.src='https://api.iconify.design/vscode-icons:default-custom.svg'">`:e.devicon?`<i class="${e.devicon}" aria-hidden="true"></i>`:`<span>${e.icon||`📌`}</span>`}
             <span>${e.name}</span>
           </div>
         `).join(``)}
