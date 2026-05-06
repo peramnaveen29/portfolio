@@ -92,13 +92,22 @@
       ]
     },
     {
+      "category": "DevSecOps & Compliance",
+      "items": [
+        { "name": "Checkmarx (SAST)", "img": "icons/checkmarx.svg" },
+        { "name": "Snyk (SCA)", "img": "icons/snyk.svg" },
+        { "name": "Aqua Image Security", "img": "icons/aws-shield.svg" },
+        { "name": "GitLab Compliance", "devicon": "devicon-gitlab-plain colored" },
+        { "name": "Prisma Cloud (CSPM)", "icon": "🛡️" }
+      ]
+    },
+    {
       "category": "Languages & Systems",
       "items": [
         { "name": "Python", "devicon": "devicon-python-plain colored" },
         { "name": "Java", "devicon": "devicon-java-plain colored" },
         { "name": "TypeScript / NodeJS", "devicon": "devicon-typescript-plain colored" },
         { "name": "Bash / Groovy", "devicon": "devicon-bash-plain colored" },
-        { "name": "Prisma Cloud", "icon": "🛡️" },
         { "name": "Okta", "img": "icons/okta.svg" }
       ]
     },
