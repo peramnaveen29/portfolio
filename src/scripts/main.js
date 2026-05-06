@@ -281,7 +281,6 @@ function openModal(project) {
       <h3>Results & Impact</h3>
       <ul>${project.results.map(r => `<li>${r}</li>`).join('')}</ul>
     </div>
-    </div>
   `;
 
   modal.setAttribute('aria-hidden', 'false');
