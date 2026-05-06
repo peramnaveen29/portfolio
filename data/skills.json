@@ -65,7 +65,7 @@
       "items": [
         { "name": "Terraform", "devicon": "devicon-terraform-plain colored" },
         { "name": "AWS CDK", "img": "icons/aws.svg" },
-        { "name": "Jenkins", "img": "icons/jenkins.svg" },
+        { "name": "Jenkins", "devicon": "devicon-jenkins-plain colored" },
         { "name": "GitLab CI", "devicon": "devicon-gitlab-plain colored" },
         { "name": "GitHub Actions", "devicon": "devicon-githubactions-plain colored" },
         { "name": "Azure DevOps", "img": "icons/azure-azure-devops.svg" },
