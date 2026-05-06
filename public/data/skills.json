@@ -3,12 +3,12 @@
     {
       "category": "AWS: Compute & Containers",
       "items": [
-        { "name": "Amazon EKS", "img": "/icons/aws-amazon-elastic-kubernetes-service.svg" },
-        { "name": "Amazon ECS", "img": "/icons/aws-amazon-elastic-container-service.svg" },
-        { "name": "AWS Lambda", "img": "/icons/aws-aws-lambda.svg" },
-        { "name": "AWS Fargate", "img": "/icons/aws-amazon-elastic-container-service.svg" },
-        { "name": "Amazon EC2", "img": "/icons/aws-amazon-ec2.svg" },
-        { "name": "Auto Scaling", "img": "/icons/aws-amazon-ec2-auto-scaling.svg" },
+        { "name": "Amazon EKS", "img": "icons/aws-amazon-elastic-kubernetes-service.svg" },
+        { "name": "Amazon ECS", "img": "icons/aws-amazon-elastic-container-service.svg" },
+        { "name": "AWS Lambda", "img": "icons/aws-aws-lambda.svg" },
+        { "name": "AWS Fargate", "img": "icons/aws-amazon-elastic-container-service.svg" },
+        { "name": "Amazon EC2", "img": "icons/aws-amazon-ec2.svg" },
+        { "name": "Auto Scaling", "img": "icons/aws-amazon-ec2-auto-scaling.svg" },
         { "name": "OpenShift", "devicon": "devicon-redhat-plain colored" },
         { "name": "Docker", "devicon": "devicon-docker-plain colored" }
       ]
@@ -16,73 +16,73 @@
     {
       "category": "AWS: Network & Content",
       "items": [
-        { "name": "Amazon VPC", "img": "/icons/aws-res-amazon-vpc-virtual-private-cloud-vpc.svg" },
-        { "name": "Amazon Route 53", "img": "/icons/aws-amazon-route-53.svg" },
-        { "name": "Amazon CloudFront", "img": "/icons/aws-amazon-cloudfront.svg" },
-        { "name": "AWS Transit Gateway", "img": "/icons/aws-aws-transit-gateway.svg" },
-        { "name": "Amazon API Gateway", "img": "/icons/aws-amazon-api-gateway.svg" },
-        { "name": "ELB / ALB / NLB", "img": "/icons/aws-elastic-load-balancing.svg" }
+        { "name": "Amazon VPC", "img": "icons/aws-res-amazon-vpc-virtual-private-cloud-vpc.svg" },
+        { "name": "Amazon Route 53", "img": "icons/aws-amazon-route-53.svg" },
+        { "name": "Amazon CloudFront", "img": "icons/aws-amazon-cloudfront.svg" },
+        { "name": "AWS Transit Gateway", "img": "icons/aws-aws-transit-gateway.svg" },
+        { "name": "Amazon API Gateway", "img": "icons/aws-amazon-api-gateway.svg" },
+        { "name": "ELB / ALB / NLB", "img": "icons/aws-elastic-load-balancing.svg" }
       ]
     },
     {
       "category": "AWS: Storage & Databases",
       "items": [
-        { "name": "Amazon S3", "img": "/icons/aws-amazon-simple-storage-service.svg" },
-        { "name": "Amazon EBS", "img": "/icons/aws-amazon-elastic-block-store.svg" },
-        { "name": "Amazon EFS", "img": "/icons/aws-amazon-efs.svg" },
-        { "name": "Amazon RDS / Aurora", "img": "/icons/aws-aurora.svg" },
-        { "name": "Amazon DynamoDB", "img": "/icons/aws-amazon-dynamodb.svg" },
-        { "name": "Amazon ElastiCache", "img": "/icons/aws-elasticache.svg" }
+        { "name": "Amazon S3", "img": "icons/aws-amazon-simple-storage-service.svg" },
+        { "name": "Amazon EBS", "img": "icons/aws-amazon-elastic-block-store.svg" },
+        { "name": "Amazon EFS", "img": "icons/aws-amazon-efs.svg" },
+        { "name": "Amazon RDS / Aurora", "img": "icons/aws-aurora.svg" },
+        { "name": "Amazon DynamoDB", "img": "icons/aws-amazon-dynamodb.svg" },
+        { "name": "Amazon ElastiCache", "img": "icons/aws-elasticache.svg" }
       ]
     },
     {
       "category": "AWS: Security & Integration",
       "items": [
-        { "name": "AWS IAM", "img": "/icons/aws.svg" },
-        { "name": "AWS KMS", "img": "/icons/aws-secrets-manager.svg" },
-        { "name": "AWS Secrets Manager", "img": "/icons/aws-secrets-manager.svg" },
-        { "name": "AWS WAF / Shield", "img": "/icons/aws-waf.svg" },
-        { "name": "Amazon SQS", "img": "/icons/aws-amazon-simple-queue-service.svg" },
-        { "name": "Amazon SNS", "img": "/icons/aws-amazon-simple-notification-service.svg" },
-        { "name": "AWS Step Functions", "img": "/icons/aws-aws-step-functions.svg" },
-        { "name": "AWS EventBridge", "img": "/icons/aws-eventbridge.svg" }
+        { "name": "AWS IAM", "img": "icons/aws.svg" },
+        { "name": "AWS KMS", "img": "icons/aws-secrets-manager.svg" },
+        { "name": "AWS Secrets Manager", "img": "icons/aws-secrets-manager.svg" },
+        { "name": "AWS WAF / Shield", "img": "icons/aws-waf.svg" },
+        { "name": "Amazon SQS", "img": "icons/aws-amazon-simple-queue-service.svg" },
+        { "name": "Amazon SNS", "img": "icons/aws-amazon-simple-notification-service.svg" },
+        { "name": "AWS Step Functions", "img": "icons/aws-aws-step-functions.svg" },
+        { "name": "AWS EventBridge", "img": "icons/aws-eventbridge.svg" }
       ]
     },
     {
       "category": "AWS: Data, AI & Governance",
       "items": [
-        { "name": "AWS Glue", "img": "/icons/aws-aws-glue.svg" },
-        { "name": "Amazon Athena", "img": "/icons/aws-amazon-athena.svg" },
-        { "name": "Amazon Bedrock", "img": "/icons/aws-amazon-bedrock.svg" },
-        { "name": "Amazon SageMaker", "img": "/icons/aws-amazon-sagemaker.svg" },
-        { "name": "AWS Systems Manager", "img": "/icons/aws-systems-manager.svg" },
-        { "name": "AWS Organizations", "img": "/icons/aws-aws-organizations.svg" },
-        { "name": "AWS CloudTrail / Config", "img": "/icons/aws-cloudtrail.svg" }
+        { "name": "AWS Glue", "img": "icons/aws-aws-glue.svg" },
+        { "name": "Amazon Athena", "img": "icons/aws-amazon-athena.svg" },
+        { "name": "Amazon Bedrock", "img": "icons/aws-amazon-bedrock.svg" },
+        { "name": "Amazon SageMaker", "img": "icons/aws-amazon-sagemaker.svg" },
+        { "name": "AWS Systems Manager", "img": "icons/aws-systems-manager.svg" },
+        { "name": "AWS Organizations", "img": "icons/aws-aws-organizations.svg" },
+        { "name": "AWS CloudTrail / Config", "img": "icons/aws-cloudtrail.svg" }
       ]
     },
     {
       "category": "Modern DevOps & IaC",
       "items": [
         { "name": "Terraform", "devicon": "devicon-terraform-plain colored" },
-        { "name": "AWS CDK", "img": "/icons/aws.svg" },
-        { "name": "Jenkins", "img": "/icons/jenkins.svg" },
+        { "name": "AWS CDK", "img": "icons/aws.svg" },
+        { "name": "Jenkins", "img": "icons/jenkins.svg" },
         { "name": "GitLab CI", "devicon": "devicon-gitlab-plain colored" },
         { "name": "GitHub Actions", "devicon": "devicon-githubactions-plain colored" },
-        { "name": "Azure DevOps", "img": "/icons/azure-azure-devops.svg" },
-        { "name": "Bitbucket", "img": "/icons/bitbucket.svg" },
-        { "name": "Ansible", "img": "/icons/ansible.svg" }
+        { "name": "Azure DevOps", "img": "icons/azure-azure-devops.svg" },
+        { "name": "Bitbucket", "img": "icons/bitbucket.svg" },
+        { "name": "Ansible", "img": "icons/ansible.svg" }
       ]
     },
     {
       "category": "Data Platforms & Observability",
       "items": [
-        { "name": "Snowflake", "img": "/icons/snowflake.svg" },
-        { "name": "dbt Cloud", "img": "/icons/dbt.svg" },
-        { "name": "Datadog", "img": "/icons/datadog.svg" },
-        { "name": "Grafana", "img": "/icons/grafana.svg" },
-        { "name": "Prometheus", "img": "/icons/prometheus.svg" },
-        { "name": "Splunk", "img": "/icons/splunk.svg" },
-        { "name": "CyberArk", "img": "/icons/cyberark.svg" }
+        { "name": "Snowflake", "img": "icons/snowflake.svg" },
+        { "name": "dbt Cloud", "img": "icons/dbt.svg" },
+        { "name": "Datadog", "img": "icons/datadog.svg" },
+        { "name": "Grafana", "img": "icons/grafana.svg" },
+        { "name": "Prometheus", "img": "icons/prometheus.svg" },
+        { "name": "Splunk", "img": "icons/splunk.svg" },
+        { "name": "CyberArk", "img": "icons/cyberark.svg" }
       ]
     },
     {
@@ -93,7 +93,7 @@
         { "name": "TypeScript / NodeJS", "devicon": "devicon-typescript-plain colored" },
         { "name": "Bash / Groovy", "devicon": "devicon-bash-plain colored" },
         { "name": "Prisma Cloud", "icon": "🛡️" },
-        { "name": "Okta", "img": "/icons/okta.svg" }
+        { "name": "Okta", "img": "icons/okta.svg" }
       ]
     },
     {
