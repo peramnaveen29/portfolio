@@ -1,6 +1,34 @@
 {
   "projects": [
     {
+      "id": "p13",
+      "title": "Config-Driven GitOps Framework for Enterprise Data Platforms",
+      "shortDesc": "API-driven TFE workflow using JSON configurations to automate infrastructure for 150+ developers across 10 AWS accounts.",
+      "description": "Architected a massive-scale, cloud-agnostic GitOps framework that abstracts infrastructure complexity via JSON-based configurations. The system uses a core Terraform engine to parse environment-specific JSON files and programmatically trigger TFE API-driven workflows. Designed for cross-platform portability, the pattern enables seamless multi-cloud deployments across AWS, Azure, and GCP through a unified abstraction layer. Implemented trunk-based development to manage 10+ accounts and 4 environment tiers (Dev, QA, Pre-prod, Prod) through centralized, reusable modules.",
+      "technologies": ["GitLab CI/CD", "Terraform Enterprise", "Azure DevOps", "TFE API", "JSON", "Python", "Multi-Cloud"],
+      "category": "devops",
+      "emoji": "🚀",
+      "role": "Lead Infrastructure SRE and DevOps Engineer",
+      "company": "First Citizens Bank",
+      "img": "/icons/terraform.svg",
+      "contributions": [
+        "Engineered JSON-based config engine parsing environment-specific definitions into dynamic Terraform configurations",
+        "Developed API-driven integration with Terraform Enterprise for automated workspace management and plan/apply triggers",
+        "Implemented trunk-based branching strategy for high-velocity infrastructure delivery across 10 AWS accounts",
+        "Constructed a centralized library of reusable Terraform modules enforcing enterprise security and governance",
+        "Architected the CI/CD orchestration layer bridging GitLab repositories with TFE API endpoints"
+      ],
+      "results": [
+        "Empowered 150+ developers with automated infrastructure self-service",
+        "Standardized infrastructure delivery across 4 environments (Dev, QA, Pre-prod, Prod)",
+        "Eliminated manual TFE workspace configuration through programmatic API orchestration",
+        "Accelerated deployment frequency while maintaining 100% compliance with central security modules",
+        "Achieved cross-platform portability enabling consistent infrastructure governance across AWS and Azure"
+      ],
+      "featured": true,
+      "repository": "https://github.com/peramnaveen29"
+    },
+    {
       "id": "p1",
       "title": "Global AWS Multi-Account Landing Zone",
       "shortDesc": "Hub-and-spoke multi-account AWS ecosystem supporting 100+ data engineers across 3 regions.",
@@ -47,7 +75,7 @@
       "results": [
         "Eliminated 30+ manual SRE requests per month through self-service automation",
         "RAG platform deployed across 3 business units",
-        "Enabled developer self-service for 100+ engineers"
+        "Enabled autonomous developer self-service across multiple business units"
       ],
       "featured": true,
       "repository": "https://github.com/peramnaveen29"
@@ -56,7 +84,7 @@
       "id": "p3",
       "title": "AWS CDK Migration & Infrastructure Modernization",
       "shortDesc": "Migrated legacy CloudFormation to AWS CDK TypeScript L3 constructs, cutting provisioning time by 40%.",
-      "description": "Transitioned legacy CloudFormation stacks to AWS CDK (TypeScript) L3 constructs and Service Catalog products. Constructed secure, reusable infrastructure modules enabling full developer self-service. Reduced cloud infrastructure provisioning time by 40% and enabled 100+ engineers to provision compliant infrastructure independently.",
+      "description": "Transitioned legacy CloudFormation stacks to AWS CDK (TypeScript) L3 constructs and Service Catalog products. Constructed secure, reusable infrastructure modules enabling full developer self-service. Reduced cloud infrastructure provisioning time by 40% and empowered cross-functional development teams to provision compliant infrastructure independently.",
       "technologies": ["AWS CDK", "TypeScript", "CloudFormation", "AWS Service Catalog", "IAM"],
       "category": "cloud",
       "emoji": "⚡",
@@ -71,7 +99,7 @@
       ],
       "results": [
         "Reduced cloud infrastructure provisioning time by 40%",
-        "Enabled full developer self-service for 100+ engineers",
+        "Enabled full self-service provisioning for engineering teams organization-wide",
         "Eliminated manual CloudFormation authoring across the platform"
       ],
       "featured": true,
@@ -194,12 +222,12 @@
         "Configured S3 Event Notifications for real-time file validation and metadata extraction",
         "Utilized Step Functions to orchestrate Saga patterns ensuring transactional integrity",
         "Implemented Lake Formation for fine-grained data lake governance and access control",
-        "Engineered centralized Jenkins shared library (Groovy) standardizing deployments across AWS and OpenShift"
+        "Orchestrated complex ETL workflows using Saga patterns in AWS Step Functions"
       ],
       "results": [
-        "Enabled automated dataset routing to ML inference workflows",
-        "Reduced deployment errors by ~60% through pipeline standardization",
-        "Scaled DevOps team from 1 to 10 engineers"
+        "Achieved near real-time data availability for downstream ML inference",
+        "Automated ingestion workflows for 50+ diverse data sources",
+        "Established the foundational DevOps framework for the Data Engineering organization"
       ],
       "featured": true,
       "repository": "https://github.com/peramnaveen29"
@@ -208,7 +236,7 @@
       "id": "p11",
       "title": "DevOps Function Leadership & Scaling",
       "shortDesc": "Founded and scaled the DevOps practice from 1 to 10 engineers, standardizing CI/CD across hybrid cloud environments.",
-      "description": "Established the core DevOps practice from scratch at Silicon Valley Bank, scaling and leading a high-performing team of 10 engineers. Ramped up team capabilities through hands-on mentorship and technical roadmap strategy. Engineered a centralized Jenkins shared library using Groovy to standardize deployments across AWS, OpenShift, and On-Premises.",
+      "description": "Established the core DevOps practice from scratch at Silicon Valley Bank, scaling and leading a high-performing team of 10 engineers. Ramped up team capabilities through hands-on mentorship and technical roadmap strategy. Standardized the global CI/CD toolchain by developing modular deployment patterns and enforcing peer review standards.",
       "technologies": ["Leadership", "Mentorship", "Jenkins", "Groovy", "Bitbucket", "OpenShift", "AWS"],
       "category": "devops",
       "emoji": "🛠️",
@@ -217,7 +245,7 @@
       "img": "/icons/jenkins.svg",
       "contributions": [
         "Founded and scaled the DevOps function from 1 to 10 engineers supporting rapid organizational growth",
-        "Developed a centralized Jenkins shared library (Groovy) standardizing cross-environment deployments",
+        "Developed a modular deployment framework standardizing cross-environment releases",
         "Utilized Bitbucket as version control system enforcing branch protection and peer review standards",
         "Integrated security gates into CI/CD pipelines to block non-compliant infrastructure"
       ],
@@ -257,8 +285,8 @@
     {
       "id": "p9",
       "title": "Cloud Foundation & Automation Portal",
-      "shortDesc": "AWS Landing Zone baselining and private cloud automation portal reducing provisioning SLAs by 50%.",
-      "description": "Executed AWS Landing Zone baselining for enterprise clients and built a private cloud self-service portal using Python, Django, and Terraform. Implemented production Docker, Kubernetes, and OpenShift workloads for multiple enterprise clients. Developed Python and Ansible playbooks to automate server provisioning and configuration management.",
+      "shortDesc": "Private cloud automation portal and infrastructure baselining reducing provisioning SLAs by 50%.",
+      "description": "Architected a private cloud self-service portal using Python, Django, and Terraform to automate complex environment setups. Executed infrastructure baselining for enterprise clients and implemented production-grade Docker and Kubernetes workloads. Developed a suite of Python and Ansible playbooks to eliminate manual server provisioning and patching.",
       "technologies": ["Python", "Django", "Terraform", "Docker", "Kubernetes", "OpenShift", "Ansible", "AWS"],
       "category": "cloud",
       "emoji": "☁️",

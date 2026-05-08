@@ -356,6 +356,17 @@ function initCertStrip() {
 function getInlineProjects() {
   return [
     {
+      id: 'p13', title: 'Config-Driven GitOps Framework for Enterprise Data Platforms',
+      shortDesc: 'API-driven TFE workflow using JSON configurations to automate infrastructure for 150+ developers across 10 AWS accounts.',
+      description: 'Architected a cloud-agnostic GitOps framework using JSON-based configurations. Designed for cross-platform portability across AWS, Azure, and GCP using a unified abstraction layer and TFE API workflows.',
+      technologies: ['GitLab CI/CD', 'Terraform Enterprise', 'Azure DevOps', 'TFE API', 'Multi-Cloud'],
+      category: 'devops', emoji: '🚀', role: 'Lead Infrastructure SRE and DevOps Engineer',
+      company: 'First Citizens Bank',
+      contributions: ['Engineered JSON-based config engine parsing definitions into dynamic TF configs', 'Developed API-driven integration with TFE for automated triggers', 'Implemented trunk-based development strategy'],
+      results: ['Empowered 150+ developers with automated infrastructure self-service', 'Standardized delivery across 4 environments (Dev, QA, Pre-prod, Prod)'],
+      featured: true, repository: 'https://github.com/peramnaveen29'
+    },
+    {
       id: 'p1', title: 'Global AWS Multi-Account Landing Zone',
       shortDesc: 'Hub-and-spoke multi-account AWS ecosystem supporting 100+ data engineers across 3 regions.',
       description: 'Architected a decoupled, multi-account AWS ecosystem using Terraform Enterprise at First Citizens Bank.',
@@ -374,7 +385,7 @@ function getInlineProjects() {
       category: 'genai', emoji: '🤖', role: 'Lead Cloud Infrastructure DevOps & SRE Engineer',
       company: 'First Citizens Bank',
       contributions: ['Built RAG-based knowledge assistants with OpenSearch vector stores', 'Engineered LangChain orchestration across 3 business units'],
-      results: ['Eliminated 30+ manual SRE requests per month', 'Enabled developer self-service for 100+ engineers'],
+      results: ['Eliminated 30+ manual SRE requests per month', 'Enabled autonomous self-service across multiple business units'],
       featured: true, repository: 'https://github.com/peramnaveen29'
     },
     {
@@ -395,8 +406,8 @@ function getInlineProjects() {
       technologies: ['AWS Lambda', 'SQS', 'AWS Glue', 'SageMaker', 'Step Functions', 'Snowflake'],
       category: 'cloud', emoji: '🧠', role: 'Senior Software Engineer – DevOps',
       company: 'Silicon Valley Bank',
-      contributions: ['Architected SQS → Lambda → Glue → SageMaker pipeline', 'Implemented Lake Formation for fine-grained data lake governance'],
-      results: ['Reduced deployment errors by ~60%', 'Scaled DevOps team from 1 to 10 engineers'],
+      contributions: ['Architected multi-modal ingestion pipeline: SQS → Lambda → Glue → SageMaker', 'Implemented Lake Formation for fine-grained data lake governance'],
+      results: ['Achieved near real-time data availability for ML inference', 'Automated ingestion for 50+ diverse data sources'],
       featured: true, repository: 'https://github.com/peramnaveen29'
     },
     {
