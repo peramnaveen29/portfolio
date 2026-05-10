@@ -15,6 +15,14 @@ The goal of this project was to move beyond the traditional static resume and bu
 *   **Data-Driven Content**: Decoupled UI and content using a JSON-based engine for easy maintenance and scalability.
 *   **Automated CI/CD**: Integrated GitHub Actions pipeline for seamless building and deployment to GitHub Pages.
 *   **Security Governance**: Protected using GitHub Repository Rulesets to ensure branch integrity and history preservation.
+*   **Analytics & Observability**: Google Analytics 4 for deep traffic insights plus a live visitor counter powered by Firebase Realtime Database — with zero credentials exposed in the repository.
+
+### **Security Architecture**
+All sensitive configuration is managed through environment variables:
+*   **Local Development**: `.env.local` (gitignored) stores Firebase credentials.
+*   **Production Builds**: GitHub Actions Secrets are injected as `VITE_*` environment variables at build time.
+*   **Database Rules**: Firebase Realtime Database is locked down with write rules that only permit atomic `+1` counter increments.
+*   **No secrets in source code** — the repository is fully safe for public visibility.
 
 ### **Future Roadmap**
 This is a living project. Future iterations will include:

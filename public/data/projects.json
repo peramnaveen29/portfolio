@@ -1,6 +1,34 @@
 {
   "projects": [
     {
+      "id": "p14",
+      "title": "AI-Powered Professional Portfolio with Analytics Pipeline",
+      "shortDesc": "Production-grade portfolio built with Agentic AI collaboration — featuring GA4 analytics, Firebase visitor counter, and secure CI/CD with secret injection.",
+      "description": "Designed and shipped a production-grade interactive portfolio that replaces the traditional static resume. Built using a data-driven architecture with JSON-based content decoupled from the rendering layer. Integrated Google Analytics 4 for deep traffic analytics and Firebase Realtime Database for a live visitor counter — with all credentials managed through GitHub Secrets and Vite environment variable injection at build time. Developed through an advanced Agentic AI collaboration workflow, achieving concept-to-production deployment in under 24 hours.",
+      "technologies": ["Vite", "Vanilla JS", "CSS3", "GitHub Actions", "Google Analytics 4", "Firebase RTDB", "GitHub Pages"],
+      "category": "genai",
+      "emoji": "🌐",
+      "role": "Personal Project",
+      "company": "Personal",
+      "contributions": [
+        "Architected a fully decoupled, data-driven portfolio using JSON content engine and ES6+ rendering",
+        "Integrated Google Analytics 4 for real-time traffic analytics — demographics, traffic sources, and session tracking",
+        "Built a live visitor counter powered by Firebase Realtime Database with atomic increment transactions",
+        "Implemented zero-trust secrets management — Firebase credentials injected via Vite env vars from GitHub Secrets",
+        "Locked down Firebase RTDB with minimal-privilege security rules permitting only +1 counter increments",
+        "Automated CI/CD via GitHub Actions with secret injection, Vite production builds, and GitHub Pages deployment",
+        "Developed entire platform through Agentic AI collaboration — concept to production in under 24 hours"
+      ],
+      "results": [
+        "Production-grade portfolio live at peramnaveen29.github.io/portfolio with zero credentials in source code",
+        "Real-time visitor analytics with dual-layer observability (GA4 dashboard + on-page counter)",
+        "Fully automated deployment pipeline — push to main triggers build, secret injection, and deploy",
+        "Security-compliant public repository with locked-down Firebase rules and gitignored environment files"
+      ],
+      "featured": true,
+      "repository": "https://github.com/peramnaveen29/portfolio"
+    },
+    {
       "id": "p13",
       "title": "Config-Driven GitOps Framework for Enterprise Data Platforms",
       "shortDesc": "API-driven TFE workflow using JSON configurations to automate infrastructure for 150+ developers across 10 AWS accounts.",

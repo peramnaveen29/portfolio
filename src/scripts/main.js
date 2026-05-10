@@ -358,6 +358,17 @@ function initCertStrip() {
 function getInlineProjects() {
   return [
     {
+      id: 'p14', title: 'AI-Powered Professional Portfolio with Analytics Pipeline',
+      shortDesc: 'Production-grade portfolio built with Agentic AI collaboration — featuring GA4 analytics, Firebase visitor counter, and secure CI/CD.',
+      description: 'Designed and shipped a production-grade interactive portfolio with JSON-based content engine, GA4 analytics, and Firebase visitor counter — all credentials managed through GitHub Secrets.',
+      technologies: ['Vite', 'Vanilla JS', 'CSS3', 'GitHub Actions', 'Google Analytics 4', 'Firebase RTDB', 'GitHub Pages'],
+      category: 'genai', emoji: '🌐', role: 'Personal Project',
+      company: 'Personal',
+      contributions: ['Architected data-driven portfolio with JSON content engine', 'Integrated GA4 + Firebase visitor counter', 'Implemented zero-trust secrets management via GitHub Secrets'],
+      results: ['Production-grade portfolio with zero credentials in source code', 'Dual-layer analytics with real-time visitor counter'],
+      featured: true, repository: 'https://github.com/peramnaveen29/portfolio'
+    },
+    {
       id: 'p13', title: 'Config-Driven GitOps Framework for Enterprise Data Platforms',
       shortDesc: 'API-driven TFE workflow using JSON configurations to automate infrastructure for 150+ developers across 10 AWS accounts.',
       description: 'Architected a cloud-agnostic GitOps framework using JSON-based configurations. Designed for cross-platform portability across AWS, Azure, and GCP using a unified abstraction layer and TFE API workflows.',
