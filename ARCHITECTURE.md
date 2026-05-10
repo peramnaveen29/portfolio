@@ -33,10 +33,15 @@ graph TB
         J["JSON Data Engine<br/>(projects.json, skills.json)"]
     end
 
+    subgraph "📧 External Services"
+        K["Formspree API<br/>(Email forwarding)"]
+    end
+
     A -->|"page_view event"| E
     A -->|"runTransaction +1"| C
     A <-->|"read/write UUID"| B
     B -->|"UUID exists? skip unique"| A
+    A -->|"POST /f/mvzlvrlw"| K
     C --- D
     F -->|"injects secrets"| G
     G -->|"VITE_* env vars"| H
@@ -58,6 +63,7 @@ graph TB
 | **Frontend** | Vite 8 + Vanilla JS (ES6+) + CSS3 | SPA-like rendering with custom design system, glassmorphism, CSS variables |
 | **Backend (BaaS)** | Firebase Realtime Database | Real-time data persistence, atomic transactions, server-side security rules |
 | **Analytics** | Google Analytics 4 | User demographics, traffic sources, device breakdown, session tracking |
+| **Contact Service** | Formspree | Serverless form handling with AJAX submission and email forwarding |
 | **Client Storage** | localStorage | Unique visitor identification via `crypto.randomUUID()` |
 | **CI/CD** | GitHub Actions | Automated build pipeline with secret injection at compile time |
 | **Hosting** | GitHub Pages (CDN) | Global static asset delivery |
@@ -137,6 +143,17 @@ The portfolio implements a dual-layer analytics strategy for full visitor observ
     *   All other nodes — read/write: denied
     *   This prevents arbitrary data manipulation while allowing both counters to function.
 *   **Graceful Degradation**: If Firebase credentials are missing (e.g., someone forks the repo without configuring secrets), both counters silently hide themselves — no errors, no broken UI.
+
+### **6. Contact Form & Lead Capture**
+The portfolio features a custom-built contact form designed to capture leads without a dedicated backend:
+
+*   **AJAX Submission**: Uses the `Fetch API` to send form data to Formspree asynchronously, providing a seamless SPA-like experience without page reloads.
+*   **Quota Fallback Strategy**: 
+    *   The free tier of Formspree has a monthly limit (50 submissions).
+    *   The form handler checks the response status from the API.
+    *   If the quota is reached (or any error occurs), the form is replaced by an **Intuitive Error State** that directs users to LinkedIn as a secondary contact channel.
+*   **Validation & UX**: Implements browser-native validation and custom loading states ("Sending...") to provide immediate user feedback.
+*   **Spam Protection**: Integrated honeypot fields (`_gotcha`) to filter out automated bot submissions.
 
 ---
 

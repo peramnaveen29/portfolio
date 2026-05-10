@@ -51,6 +51,13 @@ To update the portfolio content, modify the JSON files in `public/data/`:
 - `projects.json`: Add new featured projects and contributions.
 - `contact.json`: Update social links and contact info.
 
+## 📧 Contact Form (Formspree)
+
+The contact form uses [Formspree](https://formspree.io/) for serverless email handling.
+- **Endpoint**: The current endpoint is `https://formspree.io/f/mvzlvrlw`.
+- **Updating**: To use your own form, change the `action` attribute in the `#contactForm` element within `index.html`.
+- **Fallback**: The form logic in `main.js` (`initContactForm`) handles success and error states (including quota exhaustion).
+
 ## 🔐 Secrets & Environment Variables
 
 ### Local Development
