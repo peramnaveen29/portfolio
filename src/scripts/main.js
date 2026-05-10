@@ -472,6 +472,62 @@ function getInlineSkills() {
   ];
 }
 
+// ===== CONTACT FORM =====
+function initContactForm() {
+  const form = document.getElementById('contactForm');
+  const submitBtn = document.getElementById('contactSubmit');
+  const successEl = document.getElementById('formSuccess');
+  const errorEl = document.getElementById('formError');
+  if (!form) return;
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Client-side validation
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    // Set loading state
+    submitBtn.classList.add('submitting');
+    submitBtn.querySelector('span').textContent = 'Sending';
+
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (res.ok) {
+        // Success — hide form, show success message
+        form.hidden = true;
+        successEl.hidden = false;
+        // Hide LinkedIn alternative since success shows
+        const alt = document.querySelector('.contact-alternative');
+        if (alt) alt.style.display = 'none';
+      } else {
+        // Formspree returned an error (quota exhausted, etc.)
+        form.hidden = true;
+        errorEl.hidden = false;
+        // Hide LinkedIn alternative since error state has its own LinkedIn button
+        const alt = document.querySelector('.contact-alternative');
+        if (alt) alt.style.display = 'none';
+      }
+    } catch {
+      // Network error — show fallback
+      form.hidden = true;
+      errorEl.hidden = false;
+      const alt = document.querySelector('.contact-alternative');
+      if (alt) alt.style.display = 'none';
+    } finally {
+      submitBtn.classList.remove('submitting');
+      submitBtn.querySelector('span').textContent = 'Send Message';
+    }
+  });
+}
+
 // ===== INIT =====
 document.addEventListener('DOMContentLoaded', () => {
   initNav();
@@ -485,5 +541,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initFooter();
   initScrollTop();
   initCertStrip();
+  initContactForm();
   initVisitorCounter();
 });
