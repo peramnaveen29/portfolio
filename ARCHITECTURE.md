@@ -36,12 +36,15 @@ As a public repository, security was prioritized through "Policy-as-Code":
 The portfolio implements a dual-layer analytics strategy for full visitor observability:
 
 *   **Google Analytics 4 (GA4)**: Provides deep traffic analytics — user demographics, traffic sources, device breakdown, session duration, and real-time monitoring. The GA4 Measurement ID is a public identifier (not a secret) embedded directly in the HTML `<head>`.
-*   **Firebase Realtime Database (Visitor Counter)**: Powers a live, on-page visitor counter displayed in the footer. Each page load executes an atomic `runTransaction` that increments a single `/visits` node by exactly 1.
+*   **Firebase Realtime Database (Dual Counter)**: Powers two live, on-page counters displayed in the footer:
+    *   **Total Views** (`/visits`): Incremented on every page load via atomic `runTransaction`.
+    *   **Unique Visitors** (`/unique_visitors`): Incremented only on the first visit per browser. A UUID is generated via `crypto.randomUUID()` and stored in the visitor's `localStorage`. On subsequent visits, the UUID is detected and only the total views counter increments.
 *   **Database Security Rules**: The Firebase Realtime Database is locked down with minimal-privilege rules:
     *   `/visits` — read: open, write: only allows `current_value + 1` (atomic increment)
+    *   `/unique_visitors` — read: open, write: only allows `current_value + 1` (atomic increment)
     *   All other nodes — read/write: denied
-    *   This prevents arbitrary data manipulation while allowing the counter to function.
-*   **Graceful Degradation**: If Firebase credentials are missing (e.g., someone forks the repo without configuring secrets), the counter silently hides itself — no errors, no broken UI.
+    *   This prevents arbitrary data manipulation while allowing both counters to function.
+*   **Graceful Degradation**: If Firebase credentials are missing (e.g., someone forks the repo without configuring secrets), both counters silently hide themselves — no errors, no broken UI.
 
 ---
 
