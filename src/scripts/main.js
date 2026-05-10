@@ -1,3 +1,5 @@
+import { initVisitorCounter } from './components/visitor-counter.js';
+
 // ===== NAVIGATION =====
 function initNav() {
   const header = document.querySelector('.header');
@@ -472,4 +474,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initFooter();
   initScrollTop();
   initCertStrip();
+  initVisitorCounter();
 });
